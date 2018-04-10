@@ -1,0 +1,14 @@
+<odoo>
+    <data noupdate="1">
+    
+    	<!-- res.partner -->
+        
+        <!--
+        <record id="res_partner_test" model="res.partner">
+            <field name="name">Mon client</field>
+            <field name="street">10 rue Test</field>
+        </record>
+        -->
+        
+    </data>
+</odoo>

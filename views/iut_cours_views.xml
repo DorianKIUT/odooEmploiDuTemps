@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+      <record model="ir.ui.view" id="iut_cours_tree_view">
+          <field name="name">iut_cours.model.tree</field>
+          <field name="model">iut.cours</field>
+          <field name="arch" type="xml">
+              <tree string="Modèle">
+                  <field name="name"/>
+              </tree>
+          </field>
+      </record>
+
+      <record id="iut_cours_action" model="ir.actions.act_window">
+          <field name="name">cours</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">iut.cours</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+  </data>
+</odoo>

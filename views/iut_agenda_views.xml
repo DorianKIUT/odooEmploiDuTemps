@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+      <record model="ir.ui.view" id="iut_agenda_tree_view">
+          <field name="name">iut_agenda.model.tree</field>
+          <field name="model">iut.agenda</field>
+          <field name="arch" type="xml">
+              <tree string="Modèle">
+                  <field name="date_start"/>
+                  <field name="date_stop"/>
+                  <field name="room"/>
+                  <field name="classe_id"/>
+              </tree>
+          </field>
+      </record>
+
+      <record id="iut_agenda_action" model="ir.actions.act_window">
+          <field name="name">agenda</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">iut.agenda</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+  </data>
+</odoo>

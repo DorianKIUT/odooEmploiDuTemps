@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+      <record model="ir.ui.view" id="iut_eleve_tree_view">
+          <field name="name">iut_eleve.model.tree</field>
+          <field name="model">iut.eleve</field>
+          <field name="arch" type="xml">
+              <tree string="Modèle">
+
+                  <field name="name"/>
+                  <field name="surname"/>
+                  <field name="birthdate"/>
+                  <field name="age"/>
+                  <field name="classe_id"/>
+                  
+              </tree>
+          </field>
+      </record>
+
+      <record id="iut_eleve_action" model="ir.actions.act_window">
+          <field name="name">Eleve</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">iut.eleve</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+  </data>
+</odoo>
